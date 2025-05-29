@@ -71,6 +71,26 @@ std::ostream& operator<<(std::ostream& os, const class Base& b) {
     return os;
 }
 */
+/*
+template <typename T, int C>
+class Data {
+    std::vector<T> v;
+public:
+    Data() :v(C) {}
+
+    void Print() const {
+        for (const T& e : v) {
+            std::cout << e << ' ';
+        }
+    }
+    T Size() const {
+        return C;
+    }
+    void Set(int index, T givenValue) {
+        v[index] = givenValue;
+    }
+};
+*/
 int main() {
     
     std::cout << "### 1 ###" << std::endl;
